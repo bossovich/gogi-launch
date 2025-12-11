@@ -1,1 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #000000, #0b0f1c);
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 48px;
+  margin-right: 10px;
+}
+
+.nav-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav-right a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #9aa3b5;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.nav-right a:hover {
+  color: #ffffff;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  margin: 0;
+}
+
+.gold {
+  color: #c9a66b;
+}
+
+.hero-text p {
+  margin: 18px 0;
+  font-size: 20px;
+  color: #b9c1d6;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.primary {
+  background: #3A6AE0;
+  color: white;
+}
+
+.secondary {
+  border: 2px solid #3A6AE0;
+  color: #3A6AE0;
+}
+
+/* GOGI FLOATING ANIMATION */
+.hero-gogi {
+  height: 480px;
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
 
