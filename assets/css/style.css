@@ -146,4 +146,18 @@ body {
   border-radius: 12px;
   text-align: center;
   font-size: 22px;
+}.hero-gogi {
+  position: absolute;
+  right: 60px;
+  top: 150px;
+  width: 420px;
+  animation: float 4s ease-in-out infinite;
+  opacity: 1;
 }
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}
+
