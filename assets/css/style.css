@@ -93,5 +93,57 @@ body {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0px); }
+}/* PAGE LAYOUT */
+.page {
+  padding: 80px;
 }
 
+.page h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.page p {
+  font-size: 20px;
+  color: #b9c1d6;
+}
+
+/* FORM STYLE */
+.form-card {
+  background: #0f1423;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 30px;
+  width: 400px;
+}
+
+.form-card label {
+  margin-top: 15px;
+  display: block;
+  font-size: 18px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* TOKEN GRID */
+.token-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.token-card {
+  background: #0f1423;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 22px;
+}
