@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #000000, #0b0f1c);
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 48px;
+  margin-right: 10px;
+}
+
+.nav-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav-right a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #9aa3b5;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.nav-right a:hover {
+  color: #ffffff;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  margin: 0;
+}
+
+.gold {
+  color: #c9a66b;
+}
+
+.hero-text p {
+  margin: 18px 0;
+  font-size: 20px;
+  color: #b9c1d6;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.primary {
+  background: #3A6AE0;
+  color: white;
+}
+
+.secondary {
+  border: 2px solid #3A6AE0;
+  color: #3A6AE0;
+}
+
+/* GOGI FLOATING ANIMATION */
+.hero-gogi {
+  height: 480px;
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}/* PAGE LAYOUT */
+.page {
+  padding: 80px;
+}
+
+.page h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.page p {
+  font-size: 20px;
+  color: #b9c1d6;
+}
+
+/* FORM STYLE */
+.form-card {
+  background: #0f1423;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 30px;
+  width: 400px;
+}
+
+.form-card label {
+  margin-top: 15px;
+  display: block;
+  font-size: 18px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* TOKEN GRID */
+.token-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.token-card {
+  background: #0f1423;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 22px;
+}.hero-gogi {
+  position: absolute;
+  right: 60px;
+  top: 150px;
+  width: 420px;
+  animation: float 4s ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}
