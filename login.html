@@ -3,52 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOGI — Login</title>
+    <title>GOGI – Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- =============== NAVBAR =============== -->
 <nav class="navbar">
+    
     <div class="nav-left">
-        <img src="assets/img/gogi-icon.png" class="nav-logo" />
+        <img src="assets/img/gogi-icon.png" class="nav-logo">
         <span class="nav-title">gogi</span>
     </div>
 
     <div class="nav-center">
         <div class="search-box">
             <img src="assets/img/search.png" class="search-icon">
-            <input type="text" placeholder="Search...">
+            <input type="text" placeholder="Search..." class="search-input">
         </div>
     </div>
 
     <div class="nav-right">
         <a class="btn-nav" href="login.html">Login</a>
     </div>
+
 </nav>
 
-<!-- ================= LOGIN SECTION ================= -->
+
+<!-- =============== LOGIN SECTION =============== -->
 <section class="login-wrapper">
 
     <div class="login-box">
-        <h2>Welcome Back</h2>
-        <p class="login-sub">Log in to access your GOGI dashboard</p>
+        <h1 class="login-title">Login to <span class="blue">GOGI</span></h1>
 
-        <form>
-            <label>Email</label>
-            <input type="email" placeholder="you@example.com" required>
+        <input type="text" placeholder="Email or Username" class="login-input">
+        <input type="password" placeholder="Password" class="login-input">
 
-            <label>Password</label>
-            <input type="password" placeholder="Enter your password" required>
+        <button class="login-btn">Sign In</button>
 
-            <button class="btn-login" type="submit">Login</button>
-        </form>
-
-        <p class="login-footer">
-            Don’t have an account? <a href="#">Create one</a>
-        </p>
+        <p class="login-note">Forgot password?</p>
     </div>
 
 </section>
