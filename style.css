@@ -240,3 +240,8 @@ body {
     filter: drop-shadow(0 0 30px rgba(40,110,255,0.7));
     animation: float 4s ease-in-out infinite;
 }
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
