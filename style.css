@@ -236,7 +236,7 @@ body {
 }
 
 .token-img {
-    width: 260px;
-    filter: drop-shadow(0 0 20px rgba(40,110,255,0.5));
+    width: 420px;
+    filter: drop-shadow(0 0 30px rgba(40,110,255,0.7));
+    animation: float 4s ease-in-out infinite;
 }
-
