@@ -1,7 +1,9 @@
+/* GLOBAL */
 body {
     margin: 0;
     font-family: Inter, sans-serif;
-    background: #f5f5f5;
+    background: #000000; /* fundal negru */
+    color: white;
 }
 
 /* NAVBAR */
@@ -9,8 +11,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .nav-left {
@@ -26,52 +28,84 @@ body {
 .nav-title {
     font-size: 22px;
     font-weight: 700;
+    color: black;
 }
 
 .nav-right a {
-    margin-left: 20px;
+    margin-left: 22px;
     text-decoration: none;
     font-weight: 600;
     color: black;
+    transition: 0.2s ease;
 }
 
-/* HERO */
+.nav-right a:hover {
+    color: #0077ff;
+}
+
+/* HERO SECTION */
 .hero {
-    padding: 60px;
+    padding: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
+/* imaginea gogi în dreapta */
 .hero-gogi {
-    width: 380px;
-    margin-right: 40px;
+    width: 420px;
+    filter: drop-shadow(0px 0px 25px rgba(0, 110, 255, 0.5)); /* glow albastru */
 }
 
+/* text stânga */
 .hero-text h1 {
-    font-size: 42px;
+    font-size: 48px;
+    font-weight: 800;
     line-height: 1.2;
+    text-shadow: 0 0 15px rgba(0,110,255,0.6); /* Glow albastru */
 }
 
 .gold {
-    color: #d4af37;
+    color: #d4af37; /* auriu */
 }
 
+.hero-text p {
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+/* BUTTONS */
 .btn {
-    padding: 12px 24px;
+    padding: 14px 28px;
     display: inline-block;
-    border-radius: 10px;
-    text-decoration: none;
+    border-radius: 14px;
     font-weight: 600;
-    margin-right: 10px;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.2s ease;
 }
 
+/* buton principal */
 .primary {
-    background: black;
+    background: #111111;
+    color: white;
+    box-shadow: 0 0 15px rgba(0,110,255,0.5);
+}
+
+.primary:hover {
+    background: #0077ff;
+    box-shadow: 0 0 25px rgba(0,110,255,0.9);
+}
+
+/* buton secundar */
+.secondary {
+    background: transparent;
+    border: 2px solid white;
     color: white;
 }
 
-.secondary {
-    background: white;
-    border: 2px solid black;
-    color: black;
+.secondary:hover {
+    background: #0077ff;
+    border-color: #0077ff;
+    box-shadow: 0 0 25px rgba(0,110,255,0.8);
 }
