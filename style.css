@@ -164,3 +164,79 @@ body {
     color: #b8c3ff;
     font-size: 15px;
 }
+/* TOKENOMICS PAGE */
+.tokenomics-section {
+    margin-top: 80px;
+    padding: 60px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.token-left {
+    width: 50%;
+}
+
+.token-title {
+    font-size: 34px;
+    font-weight: 900;
+    color: #dfe6ff;
+    margin-bottom: 30px;
+}
+
+/* BLUE GLASS ROUNDED BOXES */
+.token-box {
+    background: rgba(20, 60, 200, 0.2);
+    backdrop-filter: blur(16px);
+    border-radius: 20px;
+    padding: 18px 22px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(100, 150, 255, 0.25);
+}
+
+.token-box h3 {
+    margin: 0;
+    color: #8fb3ff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.token-box p {
+    margin: 6px 0 0;
+    font-size: 16px;
+    opacity: 0.85;
+    color: #d9e1ff;
+}
+
+/* CREATE BUTTON */
+.token-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    border-radius: 16px;
+    background: #ffffff;
+    color: #000;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.token-btn:hover {
+    background: #2d76ff;
+    color: white;
+    box-shadow: 0 0 18px #2d76ff;
+}
+
+/* RIGHT IMAGE */
+.token-right {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.token-img {
+    width: 260px;
+    filter: drop-shadow(0 0 20px rgba(40,110,255,0.5));
+}
+
