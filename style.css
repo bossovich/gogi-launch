@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
-    background: #000000; /* fundal negru */
+    background: #000;
     color: white;
 }
 
@@ -10,9 +10,10 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 40px;
-    background: #ffffff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background: #000;
+    border-bottom: 1px solid #111;
 }
 
 .nav-left {
@@ -22,126 +23,78 @@ body {
 
 .nav-logo {
     width: 42px;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 .nav-title {
     font-size: 22px;
     font-weight: 700;
-    color: black;
 }
 
 .nav-right a {
-    margin-left: 22px;
+    margin-left: 25px;
     text-decoration: none;
     font-weight: 600;
-    color: black;
-    transition: 0.2s ease;
+    color: white;
+    opacity: 0.85;
 }
 
 .nav-right a:hover {
-    color: #0077ff;
+    opacity: 1;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     padding: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-/* imaginea gogi în dreapta */
 .hero-gogi {
-    width: 420px;
-    filter: drop-shadow(0px 0px 25px rgba(0, 110, 255, 0.5)); /* glow albastru */
+    width: 380px;
+    margin-right: 70px;
+    filter: drop-shadow(0 0 30px rgba(0, 110, 255, 0.6));
 }
 
-/* text stânga */
 .hero-text h1 {
-    font-size: 48px;
-    font-weight: 800;
+    font-size: 52px;
     line-height: 1.2;
-    text-shadow: 0 0 15px rgba(0,110,255,0.6); /* Glow albastru */
+    font-weight: 800;
 }
 
-.gold {
-    color: #d4af37; /* auriu */
-}
-
-.hero-text p {
-    font-size: 18px;
-    opacity: 0.85;
+.blue {
+    color: #4da3ff;
+    text-shadow: 0 0 15px rgba(0,110,255,0.8);
 }
 
 /* BUTTONS */
 .btn {
-    padding: 14px 28px;
-    display: inline-block;
-    border-radius: 14px;
-    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 12px;
     text-decoration: none;
-    margin-right: 15px;
-    transition: 0.2s ease;
+    font-weight: 600;
+    margin-right: 12px;
+    font-size: 16px;
 }
 
-/* buton principal */
 .primary {
-    background: #111111;
+    background: #111;
+    border: 2px solid #111;
     color: white;
-    box-shadow: 0 0 15px rgba(0,110,255,0.5);
+    box-shadow: 0 0 18px rgba(0,110,255,0.3);
 }
 
 .primary:hover {
-    background: #0077ff;
-    box-shadow: 0 0 25px rgba(0,110,255,0.9);
+    border-color: #4da3ff;
+    box-shadow: 0 0 25px rgba(0,110,255,0.6);
 }
 
-/* buton secundar */
 .secondary {
-    background: transparent;
+    background: black;
     border: 2px solid white;
     color: white;
 }
 
 .secondary:hover {
-    background: #0077ff;
-    border-color: #0077ff;
-    box-shadow: 0 0 25px rgba(0,110,255,0.8);
-}
-/* TOKENOMICS PAGE */
-.tokenomics {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px;
-    color: white;
-}
-
-.token-left {
-    max-width: 45%;
-}
-
-.tok-title {
-    font-size: 48px;
-    font-weight: 800;
-    margin-bottom: 10px;
-    text-shadow: 0 0 15px rgba(0,110,255,0.6);
-}
-
-.tok-subtitle {
-    font-size: 20px;
-    opacity: 0.8;
-    margin-bottom: 25px;
-}
-
-.tok-list li {
-    font-size: 18px;
-    margin-bottom: 12px;
-    list-style: none;
-}
-
-.anti-rug-img {
-    width: 420px;
-    filter: drop-shadow(0 0 25px rgba(0,110,255,0.8)); /* Glow albastru */
+    border-color: #4da3ff;
 }
