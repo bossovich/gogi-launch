@@ -89,48 +89,25 @@ body {
 }
 
 
-/* ---------------- HERO SECTION ---------------- */
-.hero {
-    display: flex;
-    padding: 80px;
-    justify-content: space-between;
-    align-items: center;
-}
+<section class="hero">
 
-.hero-left {
-    width: 48%;
-}
+    <img src="assets/img/gogi-full.png" class="hero-img">
 
-.hero-gogi {
-    width: 90%;
-    filter: drop-shadow(0 0 18px rgba(0,120,255,0.35));
-}
+    <div class="hero-text">
+        <h1>Launch your <span class="blue">next big token</span> with GOGI</h1>
 
-.hero-right {
-    width: 48%;
-}
+        <p class="hero-sub">
+            The most stylish & premium memecoin launchpad.<br>
+            Fast. Elegant. Built for viral domination.
+        </p>
 
-.hero-right h1 {
-    font-size: 46px;
-    line-height: 1.2;
-    font-weight: 700;
-}
+        <div class="hero-buttons">
+            <a href="#" class="hero-btn">Create Token</a>
+            <a href="#" class="hero-btn" style="background:black;border:2px solid #0099ff;">Explore Tokens</a>
+        </div>
+    </div>
 
-.blue {
-    color: #009dff;
-    text-shadow: 0 0 14px rgba(0,150,255,0.7);
-}
-
-.hero-desc {
-    margin-top: 14px;
-    opacity: 0.8;
-    font-size: 16px;
-}
-
-.hero-buttons {
-    margin-top: 28px;
-}
-
+</section>
 /* BUTTONS */
 .btn-primary, .btn-secondary {
     padding: 12px 28px;
