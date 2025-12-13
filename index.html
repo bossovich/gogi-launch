@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOGI Launchpad</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <img src="assets/img/gogi-icon.png" class="nav-logo" />
-            <span class="nav-title">GOGI</span>
+<!-- =============== NAVBAR =============== -->
+<nav class="navbar">
+
+    <!-- LEFT -->
+    <div class="nav-left">
+        <img src="assets/img/gogi-icon.png" class="nav-logo" alt="logo">
+        <span class="nav-title">gogi</span>
+    </div>
+
+    <!-- CENTER SEARCH -->
+    <div class="nav-center">
+        <div class="search-box">
+            <img src="assets/img/search.png" class="search-icon">
+            <input type="text" class="search-input" placeholder="Search...">
         </div>
+    </div>
 
-        <div class="nav-center">
-            <div class="search-box">
-                <img src="assets/img/search.png" class="search-icon">
-                <input type="text" placeholder="Search...">
-            </div>
+    <!-- RIGHT BUTTON -->
+    <div class="nav-right">
+        <a class="btn-nav" href="login.html">Login</a>
+    </div>
+
+</nav>
+
+<!-- =============== HERO SECTION =============== -->
+<section class="hero">
+
+    <!-- LEFT TEXT -->
+    <div class="hero-left">
+        <h1 class="hero-title">
+            Launch your <span class="blue">next big token</span> with GOGI
+        </h1>
+
+        <p class="hero-sub">
+            The most stylish & premium memecoin launchpad.<br>
+            Fast. Elegant. Built for viral domination.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="create.html" class="btn-lux">Create Token</a>
+            <a href="explore.html" class="btn-outline">Explore Tokens</a>
         </div>
+    </div>
 
-        <div class="nav-right">
-            <a href="login.html" class="btn-nav">Login</a>
-        </div>
-    </nav>
+    <!-- RIGHT IMAGE -->
+    <div class="hero-right">
+        <img src="assets/img/gogi-full.png" alt="GOGI">
+    </div>
 
-    <!-- ================= HERO SECTION ================= -->
-    <section class="hero">
-        <div class="hero-left">
-            <img src="assets/img/gogi-full.png" class="hero-gogi">
-        </div>
+</section>
 
-        <div class="hero-right">
-            <h1 class="hero-title">
-                Launch your <span class="blue">next big token</span> with GOGI
-            </h1>
 
-            <p class="hero-subtitle">
-                The most stylish & premium memecoin launchpad.<br>
-                Fast. Elegant. Built for viral domination.
-            </p>
-
-            <div class="hero-buttons">
-                <a class="btn primary" href="create.html">Create Token</a>
-                <a class="btn secondary" href="token.html">Explore Tokens</a>
-            </div>
-        </div>
-    </section>
+<!-- =============== FOOTER OPTIONAL (Luxury Clean) =============== -->
+<footer style="text-align:center; padding:40px; opacity:0.35;">
+    GOGI Launchpad © 2025 – Luxury Web3 Experience
+</footer>
 
 </body>
 </html>
