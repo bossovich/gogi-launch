@@ -228,4 +228,96 @@ body {
     width: 420px;
     filter: drop-shadow(0 0 45px rgba(0,120,255,0.55));
 }
+/* ============= ACTIVE PROJECTS SECTION ============= */
 
+.projects-wrapper {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.glow-title {
+    color: #0af;
+    text-shadow: 0 0 20px rgba(0,140,255,0.8);
+    animation: floatTitle 4s ease-in-out infinite;
+}
+
+@keyframes floatTitle {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+.section-sub {
+    opacity: 0.6;
+    margin-bottom: 45px;
+}
+
+/* CARDS */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 260px;
+    padding: 25px;
+    background: rgba(20,20,20,0.7);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,120,255,0.25);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(0,120,255,0.4);
+    transition: 0.35s;
+}
+
+.project-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 0 45px rgba(0,150,255,0.55);
+}
+
+/* ICON */
+.project-icon {
+    width: 85px;
+    filter: drop-shadow(0 0 12px rgba(0,150,255,0.6));
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.project-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.project-cap {
+    opacity: 0.7;
+    margin-bottom: 18px;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.progress-fill {
+    height: 12px;
+    background: linear-gradient(90deg, #0af, #0077ff);
+    box-shadow: 0 0 15px rgba(0,150,255,0.8);
+}
+
+.progress-label {
+    font-size: 13px;
+    opacity: 0.8;
+}
