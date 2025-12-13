@@ -253,3 +253,70 @@ body {
     opacity: 0.5;
     margin-top: 40px;
 }
+/* ===== SIDEBAR (Pump.fun style) ===== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 300px;
+    height: 100%;
+    background: rgba(10, 10, 20, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(0,120,255,0.4);
+    border-right: 2px solid #0af;
+    padding: 20px;
+    transition: 0.35s ease;
+    z-index: 999;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-logo {
+    width: 50px;
+}
+
+.sidebar-close {
+    font-size: 26px;
+    cursor: pointer;
+    color: #0af;
+}
+
+.sidebar-link {
+    display: block;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: 0.2s;
+}
+
+.sidebar-link:hover {
+    color: #0af;
+    padding-left: 6px;
+}
+
+/* BACKDROP */
+.sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 998;
+}
+
+/* NAV LOGO SMALL CLICKABLE */
+.nav-logo-small {
+    width: 42px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 8px rgba(0,120,255,0.6));
+}
