@@ -26,8 +26,8 @@ body {
 }
 
 .nav-logo {
-    width: 24px;
-    margin-right: 5px;
+    width: 28px;
+    margin-right: 10px;
     filter: drop-shadow(0 0 6px rgba(0,120,255,0.5));
 }
 
