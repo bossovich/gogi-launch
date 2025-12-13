@@ -228,103 +228,98 @@ body {
     width: 420px;
     filter: drop-shadow(0 0 35px rgba(0,140,255,0.7));
 }
-/* ============= ACTIVE PROJECTS SECTION ============= */
+/* ================= PROJECT SECTION ================ */
 
 .projects-wrapper {
-    padding: 80px 60px;
-    text-align: center;
+    padding: 60px 40px;
+    margin-top: 60px;
 }
 
 .section-title {
-    font-size: 38px;
+    text-align: center;
+    font-size: 32px;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .glow-title {
     color: #0af;
-    text-shadow: 0 0 20px rgba(0,140,255,0.8);
-    animation: floatTitle 4s ease-in-out infinite;
-}
-
-@keyframes floatTitle {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0); }
+    text-shadow: 0 0 18px rgba(0,140,255,0.7);
 }
 
 .section-sub {
+    text-align: center;
     opacity: 0.6;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
-/* CARDS */
 .projects-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 28px;
     flex-wrap: wrap;
 }
 
+/* CARD PREMIUM */
 .project-card {
-    width: 260px;
-    padding: 25px;
-    background: rgba(20,20,20,0.7);
-    border-radius: 20px;
-    text-align: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 22px;
+    background: rgba(20,20,20,0.6);
+    border: 1px solid rgba(0,120,255,0.4);
     box-shadow: 0 0 25px rgba(0,120,255,0.25);
     backdrop-filter: blur(6px);
-    border: 1px solid rgba(0,120,255,0.4);
-    transition: 0.35s;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .project-card:hover {
-    transform: translateY(-12px) scale(1.03);
-    box-shadow: 0 0 45px rgba(0,150,255,0.55);
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px rgba(0,150,255,0.55);
 }
 
-/* ICON */
-.project-icon {
-    width: 85px;
-    filter: drop-shadow(0 0 12px rgba(0,150,255,0.6));
-    margin-bottom: 15px;
+/* AVATAR */
+.project-avatar {
+    width: 70px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 12px auto;
+    filter: drop-shadow(0 0 12px rgba(0,150,255,0.5));
 }
 
 /* TEXT */
-.project-name {
+.project-info h3 {
+    text-align: center;
     font-size: 20px;
-    font-weight: 700;
+    margin: 5px 0;
 }
 
-.project-cap {
+.cap {
+    text-align: center;
     opacity: 0.7;
-    margin-bottom: 18px;
+    font-size: 14px;
 }
 
 /* PROGRESS BAR */
-.progress-bar {
+.progress {
     width: 100%;
-    height: 12px;
-    background: rgba(255,255,255,0.08);
+    height: 10px;
     border-radius: 10px;
+    background: rgba(255,255,255,0.08);
     overflow: hidden;
-    margin-bottom: 6px;
+    margin-top: 8px;
 }
 
-.progress-fill {
-    height: 12px;
+.progress div {
+    height: 10px;
     background: linear-gradient(90deg, #0af, #0077ff);
-    box-shadow: 0 0 15px rgba(0,150,255,0.8);
+    box-shadow: 0 0 12px rgba(0,120,255,0.9);
 }
 
-.progress-label {
-    font-size: 13px;
+.progress-text {
+    display: block;
+    text-align: center;
     opacity: 0.8;
-}
-.hero {
-    display: flex;
-    flex-direction: row; /* FIX — pune textul în stânga și imaginea în dreapta */
-    align-items: center;
-    justify-content: space-between;
-    padding: 120px 80px 60px 80px;
+    margin-top: 6px;
+    font-size: 13px;
 }
