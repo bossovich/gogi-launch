@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GOGI Launchpad</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- NAVBAR -->
 <nav class="navbar">
-
+    
     <div class="nav-left">
         <img src="assets/img/gogi-icon.png" class="nav-logo">
         <span class="nav-title">gogi</span>
     </div>
 
+    <!-- SEARCH -->
     <div class="nav-center">
         <div class="search-box">
             <img src="assets/img/search.png" class="search-icon">
-            <input class="search-input" type="text" placeholder="Search...">
+            <input type="text" placeholder="Search..." class="search-input">
         </div>
     </div>
 
@@ -30,72 +31,92 @@
         <a class="btn-nav" href="create.html">Create Coin</a>
         <a class="btn-nav" href="tokenomics.html">Tokenomics</a>
     </div>
-
 </nav>
 
 
-<!-- ================= HERO ================= -->
+<!-- HERO SECTION -->
 <section class="hero">
 
-    <img src="assets/img/gogi-full.png" class="hero-gogi">
+    <div class="hero-left">
+        <img src="assets/img/gogi-full.png" class="hero-gogi">
+    </div>
 
-    <div class="hero-text">
-        <h1>Launch your <span class="blue">next big<br>token</span> with GOGI</h1>
+    <div class="hero-right">
 
-        <p class="hero-sub">
+        <h1>
+            Launch your <span class="blue">next big<br>token</span> with GOGI
+        </h1>
+
+        <p class="hero-desc">
             The most stylish & premium memecoin launchpad.<br>
             Fast. Elegant. Built for viral domination.
         </p>
 
         <div class="hero-buttons">
-            <a href="create.html" class="btn-primary">Create Token</a>
-            <a href="explore.html" class="btn-secondary">Explore Tokens</a>
+            <a class="btn-primary" href="#">Create Token</a>
+            <a class="btn-secondary" href="#">Explore Tokens</a>
         </div>
+
     </div>
 
 </section>
 
 
+<!-- NOW TRENDING -->
+<section class="trending-section">
 
-<!-- ================= HOT PROJECTS ================= -->
-<section class="projects-wrapper">
+    <h2 class="section-title">Now Trending</h2>
 
-    <h2 class="section-title">
-        <span class="glow-title">Active GOGI Projects</span>
-    </h2>
+    <div class="trending-grid">
 
-    <p class="section-sub">Premium meme-coins powered by GOGI luxury technology.</p>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-            <img src="assets/img/gogi-icon.png" class="project-avatar">
-            <h3>Blue Diamond</h3>
-            <p class="cap">$142.5K Market Cap</p>
+        <div class="trend-card">
+            <img src="assets/img/gogi-icon.png" class="trend-img">
+            <h3>$GOGI</h3>
+            <p>Market Cap: $410K</p>
             <div class="progress"><div style="width:72%"></div></div>
-            <span class="progress-text">72%</span>
         </div>
 
-        <div class="project-card">
-            <img src="assets/img/gogi-icon.png" class="project-avatar">
-            <h3>Royal GOGI</h3>
-            <p class="cap">$289.3K Market Cap</p>
-            <div class="progress"><div style="width:100%"></div></div>
-            <span class="progress-text">100%</span>
+        <div class="trend-card">
+            <img src="assets/img/gogi-icon.png" class="trend-img">
+            <h3>$CHEF</h3>
+            <p>Market Cap: $219K</p>
+            <div class="progress"><div style="width:54%"></div></div>
         </div>
 
-        <div class="project-card">
-            <img src="assets/img/gogi-icon.png" class="project-avatar">
-            <h3>GOGI Emperor</h3>
-            <p class="cap">$95.3K Market Cap</p>
-            <div class="progress"><div style="width:38%"></div></div>
-            <span class="progress-text">38%</span>
+        <div class="trend-card">
+            <img src="assets/img/gogi-icon.png" class="trend-img">
+            <h3>$KING</h3>
+            <p>Market Cap: $782K</p>
+            <div class="progress"><div style="width:96%"></div></div>
         </div>
 
     </div>
 
 </section>
 
+
+<!-- HOT TOKENS TABLE -->
+<section class="hot-tokens">
+
+    <h2 class="section-title">Hot Tokens</h2>
+
+    <div class="token-table">
+
+        <!-- 10 tokens -->
+        <div class="token-row"><span>$GOGI</span><span>$410K</span></div>
+        <div class="token-row"><span>$CHEF</span><span>$219K</span></div>
+        <div class="token-row"><span>$KING</span><span>$782K</span></div>
+        <div class="token-row"><span>$MEME</span><span>$102K</span></div>
+        <div class="token-row"><span>$FLEX</span><span>$331K</span></div>
+        <div class="token-row"><span>$PUMP</span><span>$54K</span></div>
+        <div class="token-row"><span>$HYPE</span><span>$88K</span></div>
+        <div class="token-row"><span>$DOG</span><span>$199K</span></div>
+        <div class="token-row"><span>$LORD</span><span>$511K</span></div>
+        <div class="token-row"><span>$MAXI</span><span>$321K</span></div>
+
+    </div>
+
+</section>
 
 <footer class="footer">
     GOGI Launchpad © 2025 — Luxury Web3 Experience
