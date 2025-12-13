@@ -4,77 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOGI Launchpad</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ================= NAVBAR ================= -->
     <nav class="navbar">
         <div class="nav-left">
-            <img src="assets/img/gogi-icon.png" class="nav-logo">
-            <span class="nav-title">gogi</span>
+            <img src="assets/img/gogi-icon.png" class="nav-logo" />
+            <span class="nav-title">GOGI</span>
+        </div>
+
+        <div class="nav-center">
+            <div class="search-box">
+                <img src="assets/img/search.png" class="search-icon">
+                <input type="text" placeholder="Search...">
+            </div>
         </div>
 
         <div class="nav-right">
-            <a href="create.html">Create</a>
-            <a href="explore.html">Explore</a>
-            <a href="token.html">Tokenomics</a>
+            <a href="login.html" class="btn-nav">Login</a>
         </div>
     </nav>
 
-
-    <!-- HERO -->
+    <!-- ================= HERO SECTION ================= -->
     <section class="hero">
+        <div class="hero-left">
+            <img src="assets/img/gogi-full.png" class="hero-gogi">
+        </div>
 
-        <img src="assets/img/gogi-full.png" class="hero-gogi">
-
-        <div class="hero-text">
+        <div class="hero-right">
             <h1 class="hero-title">
                 Launch your <span class="blue">next big token</span> with GOGI
             </h1>
 
-            <p class="hero-sub">
+            <p class="hero-subtitle">
                 The most stylish & premium memecoin launchpad.<br>
                 Fast. Elegant. Built for viral domination.
             </p>
 
             <div class="hero-buttons">
                 <a class="btn primary" href="create.html">Create Token</a>
-                <a class="btn secondary" href="explore.html">Explore Tokens</a>
+                <a class="btn secondary" href="token.html">Explore Tokens</a>
             </div>
-        </div>
-
-    </section>
-
-
-    <!-- LUXURY PROJECT SECTION -->
-    <section class="gogi-luxury">
-        <h2 class="lux-title">Active GOGI Projects</h2>
-        <p class="lux-subtitle">Premium-tier launches powered by GOGI technology.</p>
-
-        <div class="lux-grid">
-
-            <div class="lux-card">
-                <img src="assets/img/gogi-icon.png" class="lux-icon">
-                <h3 class="card-title">GOGI Prime</h3>
-                <p class="cap">Market Cap: $42.1K</p>
-            </div>
-
-            <div class="lux-card">
-                <img src="assets/img/gogi-icon.png" class="lux-icon">
-                <h3 class="card-title">Blue Suit GOGI</h3>
-                <p class="cap">Market Cap: $128K</p>
-            </div>
-
-            <div class="lux-card">
-                <img src="assets/img/gogi-icon.png" class="lux-icon">
-                <h3 class="card-title">Classic GOGI</h3>
-                <p class="cap">Market Cap: $9.7K</p>
-            </div>
-
         </div>
     </section>
 
