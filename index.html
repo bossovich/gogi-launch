@@ -4,101 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOGI Launchpad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
+<!-- NAVBAR -->
 <nav class="navbar">
+
     <div class="nav-left">
-        <img src="assets/img/gogi-icon.png" class="nav-logo-small" id="openSidebar">
+        <img src="assets/img/gogi-icon.png" class="nav-logo-small">
+        <span class="brand">gogi</span>
     </div>
 
     <div class="nav-center">
         <div class="search-box">
             <img src="assets/img/search.png" class="search-icon">
-            <input class="search-input" type="text" placeholder="Search...">
+            <input type="text" placeholder="Search…" class="search-input">
         </div>
     </div>
 
     <div class="nav-right">
-        <a class="btn-nav" href="login.html">Login</a>
-        <a class="btn-nav" href="create.html">Create Coin</a>
-        <a class="btn-nav" href="tokenomics.html">Tokenomics</a>
+        <a href="login.html" class="nav-btn">Login</a>
+        <a href="#" class="nav-btn">Create Coin</a>
+        <a href="#" class="nav-btn">Tokenomics</a>
     </div>
 </nav>
 
-
-
-<!-- ===== SIDEBAR (Ca pe Pump.fun) ===== -->
-<div id="sidebar" class="sidebar">
-    <div class="sidebar-header">
-        <img src="assets/img/gogi-icon.png" class="sidebar-logo">
-        <span class="sidebar-close" id="closeSidebar">✕</span>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-left">
+        <img src="assets/img/gogi-full.png" class="hero-img">
     </div>
 
-    <a class="sidebar-link" href="index.html">🏠 Home</a>
-    <a class="sidebar-link" href="create.html">⚡ Create Coin</a>
-    <a class="sidebar-link" href="explore.html">🔍 Explore Tokens</a>
-    <a class="sidebar-link" href="tokenomics.html">📘 Tokenomics</a>
-    <a class="sidebar-link" href="login.html">🔐 Login</a>
-</div>
-
-<div id="sidebarBackdrop" class="sidebar-backdrop"></div>
-
-
-
-<!-- ===== HERO ===== -->
-<section class="hero">
-    <img src="assets/img/gogi-full.png" class="hero-gogi">
-
-    <div class="hero-text">
-        <h1>
-            Launch your <span class="blue">next big token</span><br>with GOGI
-        </h1>
-
-        <p>The most stylish & premium memecoin launchpad.<br>
-        Fast. Elegant. Built for viral domination.</p>
+    <div class="hero-right">
+        <h1>Launch your <span class="blue">next big token</span> with GOGI</h1>
+        <p class="subtitle">
+            The most stylish & premium memecoin launchpad.<br>
+            Fast. Elegant. Built for viral domination.
+        </p>
 
         <div class="hero-buttons">
-            <a class="btn-primary" href="create.html">Create Token</a>
-            <a class="btn-secondary" href="explore.html">Explore Tokens</a>
+            <a class="btn-primary">Create Token</a>
+            <a class="btn-outline">Explore Tokens</a>
         </div>
     </div>
 </section>
 
+<!-- NOW TRENDING -->
+<section class="trending-section">
+    <h2>Now Trending</h2>
 
+    <div class="trending-wrapper">
 
-<!-- ===== NOW TRENDING ===== -->
-<section class="trending">
-    <h2 class="section-title">Now Trending</h2>
+        <div class="trend-card">
+            <img src="assets/img/gogi-anti-rug.png">
+            <div>
+                <h3>GOGI Anti-Rug</h3>
+                <p>Market cap: $1.9M</p>
+            </div>
+        </div>
 
-    <div class="trending-row">
-        <div class="trend-card"></div>
-        <div class="trend-card"></div>
-        <div class="trend-card"></div>
+        <div class="trend-card">
+            <img src="assets/img/gogi-full.png">
+            <div>
+                <h3>Baby GOGI</h3>
+                <p>Market cap: $3.2M</p>
+            </div>
+        </div>
+
+        <div class="trend-card">
+            <img src="assets/img/gogi-icon.png">
+            <div>
+                <h3>GOGI Classic</h3>
+                <p>Market cap: $850K</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
+<!-- HOT TOKENS TABLE -->
+<section class="hot-table-section">
+    <h2>Hot Tokens</h2>
 
+    <table class="token-table">
+        <tr>
+            <th>Name</th>
+            <th>Market Cap</th>
+            <th>24h</th>
+            <th>Creator</th>
+        </tr>
 
-<!-- ===== HOT TOKENS LIST ===== -->
-<section class="hot-tokens">
-    <h2 class="section-title">Hot GOGI Projects</h2>
-
-    <div class="token-grid">
-        <div class="token-card"></div>
-        <div class="token-card"></div>
-        <div class="token-card"></div>
-        <div class="token-card"></div>
-        <div class="token-card"></div>
-        <div class="token-card"></div>
-        <div class="token-card"></div>
-        <div class="token-card"></div>
-    </div>
+        <tr><td>GOGI Pro</td><td>$820K</td><td class="green">+12%</td><td>@alpha</td></tr>
+        <tr><td>Mini GOGI</td><td>$410K</td><td class="red">–4%</td><td>@wave</td></tr>
+        <tr><td>Royal GOGI</td><td>$1.2M</td><td class="green">+22%</td><td>@lux</td></tr>
+        <tr><td>GOGI Ghost</td><td>$93K</td><td class="green">+3%</td><td>@ice</td></tr>
+        <tr><td>Blue Suit GOGI</td><td>$670K</td><td class="red">–2%</td><td>@boss</td></tr>
+    </table>
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>
