@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Why GOGI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --blue:#2da8ff;
+  --blue-glow:rgba(45,168,255,.55);
+  --bg:#070b12;
+  --glass:rgba(255,255,255,.08);
+}
+
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Arial,sans-serif}
+
+body{
+  background:
+    radial-gradient(circle at top,#0c1f3d 0%,#05080f 65%);
+  color:#fff;
+  min-height:100vh;
+}
+
+/* NAV */
+.nav{
+  padding:20px 40px;
+}
+.nav a{
+  color:var(--blue);
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* LAYOUT */
+.wrapper{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  padding:60px 80px;
+  align-items:center;
+}
+
+/* LEFT CARDS */
+.cards{
+  display:grid;
+  gap:22px;
+}
+
+.card{
+  background:var(--glass);
+  border-radius:22px;
+  padding:26px 28px;
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 0 0 transparent;
+  transition:.3s;
+}
+.card:hover{
+  box-shadow:0 0 30px var(--blue-glow);
+}
+
+.card h2{
+  color:var(--blue);
+  margin-bottom:10px;
+  font-size:22px;
+}
+
+.card p{
+  color:#d6e7ff;
+  line-height:1.6;
+  font-size:15px;
+}
+
+/* RIGHT IMAGE */
+.visual img{
+  width:100%;
+  max-width:520px;
+  display:block;
+  margin:auto;
+  filter:
+    drop-shadow(0 0 40px var(--blue-glow))
+    drop-shadow(0 0 80px rgba(45,168,255,.25));
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+  .wrapper{
+    grid-template-columns:1fr;
+    padding:40px 24px;
+  }
+  .visual{margin-top:40px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <a href="index.html">← Back to Home</a>
+</div>
+
+<!-- CONTENT -->
+<div class="wrapper">
+
+  <!-- LEFT -->
+  <div class="cards">
+
+    <div class="card">
+      <h2>Why GOGI?</h2>
+      <p>
+        GOGI is built to stop dead-on-arrival tokens.
+        We focus on quality launches, not spam created every 5 seconds.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Anti Rug System</h2>
+      <p>
+        We use AI-based checks, liquidity locks and smart filters
+        to block malicious launches before they go live.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Real Benefits</h2>
+      <p>
+        Fair exposure, transparent progress tracking
+        and no hidden mechanics that kill projects instantly.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Not Like Pump & Bonk</h2>
+      <p>
+        Pump and Bonk allow mass token creation without control.
+        GOGI is selective — quality over chaos.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="visual">
+    <img src="assets/img/bunny.png" alt="GOGI vs Pump & Bonk">
+  </div>
+
+</div>
+
+</body>
+</html>
 
