@@ -1,17 +1,8 @@
-const sidebar = document.getElementById("sidebar");
-const backdrop = document.getElementById("sidebarBackdrop");
+// Sidebar animation (logo -> text)
+document.querySelector(".sidebar").addEventListener("mouseover", () => {
+    document.getElementById("logoText").style.display = "block";
+});
 
-document.getElementById("openSidebar").onclick = () => {
-    sidebar.style.left = "0";
-    backdrop.style.display = "block";
-};
-
-document.getElementById("closeSidebar").onclick = () => {
-    sidebar.style.left = "-320px";
-    backdrop.style.display = "none";
-};
-
-backdrop.onclick = () => {
-    sidebar.style.left = "-320px";
-    backdrop.style.display = "none";
-};
+document.querySelector(".sidebar").addEventListener("mouseout", () => {
+    document.getElementById("logoText").style.display = "none";
+});
