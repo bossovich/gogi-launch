@@ -1,102 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GOGI Launchpad</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- ░░ NAVBAR ░░ -->
-<nav class="navbar">
-    <div class="nav-left">
-        <img src="assets/img/gogi-icon.png" class="nav-logo" id="navLogo">
-        <span class="nav-title" id="navTitle">gogi</span>
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <div class="logo-container">
+        <img id="sidebarLogo" src="assets/img/gogi-icon.png" class="sidebar-logo">
+        <span id="logoText">gogi</span>
     </div>
 
-    <div class="nav-center">
-        <div class="search-box">
-            <img src="assets/img/search.png" class="search-icon">
-            <input type="text" placeholder="Search..." class="search-input">
+    <nav class="menu">
+        <a href="#"><img src="assets/img/search.png"> Home</a>
+        <a href="#"><img src="assets/img/search.png"> Chat</a>
+        <a href="#"><img src="assets/img/search.png"> Support</a>
+    </nav>
+</aside>
+
+<!-- PAGE WRAPPER -->
+<div class="page">
+
+    <!-- HEADER -->
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
         </div>
-    </div>
-
-    <div class="nav-right">
-        <a class="btn-nav" href="login.html">Login</a>
-        <a class="btn-nav" href="#">Create Coin</a>
-        <a class="btn-nav" href="#">Tokenomics</a>
-    </div>
-</nav>
-
-<!-- ░░ HERO ░░ -->
-<section class="hero">
-
-    <img src="assets/img/gogi-full.png" class="hero-gogi">
-
-    <!-- Hinkali PNG (luxury, discret) -->
-    <img src="assets/img/assetsimggogi-bg-1.png.png" class="hero-hinkali">
-
-    <div class="hero-text">
-        <h1>Launch your <span class="blue">next big token</span> with GOGI</h1>
-        <p>The most stylish & premium memecoin launchpad.<br>
-           Fast. Elegant. Built for viral domination.</p>
-
-        <div class="hero-buttons">
-            <a class="btn-big" href="#">Create Token</a>
-            <a class="btn-big-outline" href="#">Explore Tokens</a>
+        <div class="top-buttons">
+            <button class="glow-btn">Login</button>
+            <button class="glow-btn">Create Coin</button>
+            <button class="glow-btn">Tokenomics</button>
         </div>
-    </div>
+    </header>
 
-</section>
-
-<!-- ░░ TRENDING ░░ -->
-<section class="trending">
-    <h2>Now Trending</h2>
-
-    <div class="trend-wrapper">
-        <div class="trend-card">
-            <img src="assets/img/gogi-icon.png">
-            <h3>GOGI Anti-Rug</h3>
-            <p>Premium protection system.</p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-left">
+            <img src="assets/img/gogi-full.png" class="hero-gogi">
         </div>
 
-        <div class="trend-card">
-            <img src="assets/img/gogi-icon.png">
-            <h3>Baby GOGI</h3>
-            <p>The cutest memecoin alive.</p>
+        <div class="hero-right">
+            <h1>Launch your <span class="blue">next big token</span><br>with GOGI</h1>
+            <p class="subtitle">The most stylish & premium memecoin launchpad.<br>
+               Fast. Elegant. Built for viral domination.</p>
+
+            <div class="hero-buttons">
+                <button class="glow-btn big">Create Token</button>
+                <button class="glow-btn big">Explore Tokens</button>
+            </div>
         </div>
 
-        <div class="trend-card">
-            <img src="assets/img/gogi-icon.png">
-            <h3>GOGI Classic</h3>
-            <p>The original and timeless model.</p>
+        <!-- HINKALI LUXURY RIGHT -->
+        <img src="assets/img/hinkali-bg.png" class="hinkali-floating">
+    </section>
+
+    <!-- TRENDING SECTION -->
+    <section class="trending">
+        <h2>Now Trending</h2>
+
+        <div class="trending-grid">
+
+            <!-- Example card -->
+            <div class="token-card">
+                <img src="assets/img/gogi-icon.png" class="token-img">
+                <div class="token-info">
+                    <h3>GOGI Classic</h3>
+                    <p class="mc">$12.4K</p>
+                    <div class="bar"><div class="fill" style="width: 40%;"></div></div>
+                </div>
+            </div>
+
+            <div class="token-card">
+                <img src="assets/img/gogi-icon.png" class="token-img">
+                <div class="token-info">
+                    <h3>Baby GOGI</h3>
+                    <p class="mc">$7.9K</p>
+                    <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+                </div>
+            </div>
+
+            <div class="token-card">
+                <img src="assets/img/gogi-icon.png" class="token-img">
+                <div class="token-info">
+                    <h3>GOGI Anti-Rug</h3>
+                    <p class="mc">$19.2K</p>
+                    <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ░░ HOT TOKENS TABLE ░░ -->
-<section class="hot-tokens">
-    <h2>Hot Tokens</h2>
-
-    <div class="token-table">
-
-        <!-- 10 carduri -->
-        <div class="token-row"><span>🔥 GOGI Anti-Rug</span><span>$1.02M MC</span></div>
-        <div class="token-row"><span>🟦 Baby GOGI</span><span>$860K MC</span></div>
-        <div class="token-row"><span>✨ GOGI Classic</span><span>$790K MC</span></div>
-        <div class="token-row"><span>💎 GOGI Prime</span><span>$600K MC</span></div>
-        <div class="token-row"><span>🔮 Mystic GOGI</span><span>$550K MC</span></div>
-        <div class="token-row"><span>🐳 Whale GOGI</span><span>$490K MC</span></div>
-        <div class="token-row"><span>🌀 GOGI Vortex</span><span>$410K MC</span></div>
-        <div class="token-row"><span>🔥 GOGI Reborn</span><span>$350K MC</span></div>
-        <div class="token-row"><span>🛡 GOGI Guard</span><span>$300K MC</span></div>
-        <div class="token-row"><span>⚡ GOGI Flash</span><span>$280K MC</span></div>
-
-    </div>
-
-</section>
+</div>
 
 <script src="script.js"></script>
 </body>
