@@ -1,8 +1,16 @@
-// Sidebar animation (logo -> text)
-document.querySelector(".sidebar").addEventListener("mouseover", () => {
-    document.getElementById("logoText").style.display = "block";
-});
+const loginBtn = document.getElementById("loginBtn");
+const loginModal = document.getElementById("loginModal");
 
-document.querySelector(".sidebar").addEventListener("mouseout", () => {
-    document.getElementById("logoText").style.display = "none";
-});
+loginBtn.onclick = () => {
+  loginModal.style.display = "flex";
+};
+
+loginModal.onclick = (e) => {
+  if (e.target === loginModal) {
+    loginModal.style.display = "none";
+  }
+};
+
+document.querySelector(".close").onclick = () => {
+  loginModal.style.display = "none";
+};
