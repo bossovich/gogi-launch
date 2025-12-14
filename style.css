@@ -1,3 +1,8 @@
+:root {
+  --gogi-blue: #2da9ff;
+  --bg-dark: #05070c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 }
 
 body {
-  background: #05070c;
+  background: var(--bg-dark);
   color: white;
 }
 
@@ -17,10 +22,12 @@ body {
   justify-content: space-between;
   padding: 16px 40px;
   position: relative;
+  z-index: 20;
 }
 
-.logo {
-  font-weight: 700;
+.logo img {
+  height: 36px;
+  filter: drop-shadow(0 0 8px rgba(45,169,255,.45));
 }
 
 .search-bar {
@@ -36,6 +43,12 @@ body {
   border: none;
   background: #0c111a;
   color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 0 12px rgba(45,169,255,.35);
 }
 
 .nav-actions {
@@ -54,45 +67,67 @@ body {
 }
 
 .nav-btn:hover {
-  background: rgba(48,186,143,.15);
-  box-shadow: 0 0 12px rgba(48,186,143,.6);
+  background: rgba(45,169,255,.12);
+  box-shadow: 0 0 12px rgba(45,169,255,.6);
 }
 
 .nav-btn.glow {
-  background: #30BA8F;
-  color: black;
+  background: var(--gogi-blue);
+  color: #000;
 }
 
 /* HERO */
 .hero {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  min-height: 80vh;
+  min-height: 90vh;
   padding: 0 80px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at left,
+    rgba(45,169,255,.18),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.hero-left img {
+  width: 400px;
+  filter: drop-shadow(0 0 22px rgba(45,169,255,.35));
 }
 
 .hero-right {
-  max-width: 520px;
+  max-width: 480px;
+  margin-left: -60px; /* aduce textul mai aproape de logo */
+  z-index: 2;
 }
 
 .hero h1 {
-  font-size: 44px;
+  font-size: 46px;
   line-height: 1.2;
 }
 
 .highlight {
-  color: #30BA8F;
-  text-shadow: 0 0 18px rgba(48,186,143,.6);
+  color: var(--gogi-blue);
+  text-shadow: 0 0 22px rgba(45,169,255,.75);
 }
 
 .brand {
-  color: #30BA8F;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(45,169,255,.55);
 }
 
 .hero p {
-  opacity: 0.7;
-  margin: 16px 0 24px;
+  opacity: 0.75;
+  margin: 18px 0 28px;
 }
 
 .hero-actions {
@@ -101,29 +136,47 @@ body {
 }
 
 .btn {
-  padding: 12px 22px;
+  padding: 12px 24px;
   border-radius: 999px;
   border: none;
   cursor: pointer;
+  font-weight: 500;
+  transition: 0.25s;
 }
 
 .btn.primary {
-  background: #30BA8F;
+  background: var(--gogi-blue);
   color: black;
+}
+
+.btn.primary:hover {
+  box-shadow: 0 0 18px rgba(45,169,255,.65);
 }
 
 .btn.ghost {
   background: transparent;
   color: white;
-  border: 1px solid #30BA8F;
+  border: 1px solid var(--gogi-blue);
 }
 
-/* HINKALI */
-.hinkali-bg {
-  width: 520px;
-  opacity: 0.35;
-  filter: blur(0.3px);
-  pointer-events: none;
+.btn.ghost:hover {
+  background: rgba(45,169,255,.1);
+}
+
+/* HINKALI RIGHT */
+.hinkali-right {
+  position: absolute;
+  right: -100px;
+  bottom: 40px;
+  width: 500px;
+  opacity: 0.25;
+  filter: drop-shadow(0 0 24px rgba(45,169,255,.35));
+  animation: float 14s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0px) rotate(0deg); }
+  to { transform: translateY(-25px) rotate(2deg); }
 }
 
 /* TRENDING */
@@ -131,7 +184,7 @@ body {
   margin: 60px;
   padding: 40px;
   border-radius: 24px;
-  background: linear-gradient(135deg, #0b1f2a, #0e3a47, #30BA8F);
+  background: linear-gradient(135deg, #071827, #0b2c4a, var(--gogi-blue));
 }
 
 .cards {
@@ -154,20 +207,28 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(0,0,0,.6);
+  z-index: 100;
 }
 
 .login-box {
   background: #0c0f14;
   border-radius: 18px;
-  padding: 24px;
+  padding: 26px;
   width: 320px;
   text-align: center;
-  box-shadow: 0 0 40px rgba(48,186,143,.25);
+  box-shadow: 0 0 40px rgba(45,169,255,.35);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 .login-logo {
   width: 42px;
   margin-bottom: 16px;
+  filter: drop-shadow(0 0 8px rgba(45,169,255,.45));
 }
 
 .login-option {
@@ -179,10 +240,11 @@ body {
   cursor: pointer;
   background: #101622;
   color: white;
+  transition: 0.25s;
 }
 
 .login-option:hover {
-  background: #30BA8F;
+  background: var(--gogi-blue);
   color: black;
 }
 
