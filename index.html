@@ -62,4 +62,169 @@ body {
 }
 
 .search:focus {
-  box-shadow: 0 0 22px rgba(80,16
+  box-shadow: 0 0 22px rgba(80,160,255,.55);
+}
+
+/* NAV BUTTONS */
+.nav-right {
+  display: flex;
+  gap: 14px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(80,160,255,.18);
+  border: 1px solid rgba(80,160,255,.35);
+  color: #bcdcff;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.nav-btn:hover {
+  background: rgba(80,160,255,.4);
+  box-shadow: 0 0 20px rgba(80,160,255,.7);
+  color: white;
+}
+
+.nav-btn.primary {
+  background: linear-gradient(135deg,#3ba7ff,#256bff);
+  border: none;
+  color: white;
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 80px;
+}
+
+.hero-left {
+  max-width: 520px;
+}
+
+.hero-left img {
+  width: 180px;
+  margin-bottom: 24px;
+  filter:
+    drop-shadow(0 0 30px rgba(80,160,255,.4))
+    drop-shadow(0 0 80px rgba(80,160,255,.2));
+}
+
+.hero-title {
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.hero-title span {
+  color: #4db3ff;
+  text-shadow: 0 0 18px rgba(77,179,255,.45);
+}
+
+.hero-sub {
+  margin-top: 14px;
+  color: #bcdcff;
+}
+
+.hero-actions {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+}
+
+.hero-actions button {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.hero-actions .primary {
+  background: linear-gradient(135deg,#3ba7ff,#256bff);
+  color: white;
+}
+
+.hero-actions .secondary {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.25);
+  color: white;
+}
+
+/* ================= HINKALI ================= */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 120px;
+}
+
+.hero-right img {
+  width: 420px;
+  filter:
+    drop-shadow(0 0 30px rgba(80,160,255,.4))
+    drop-shadow(0 0 70px rgba(80,160,255,.2));
+}
+
+/* ================= SECTION ================= */
+.section {
+  padding: 100px 80px;
+  background: linear-gradient(180deg,#061b2f,#02060a);
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="nav-left">
+    <img src="logo-small.png" class="logo">
+    <input class="search" placeholder="Search tokens...">
+  </div>
+
+  <div class="nav-right">
+    <button class="nav-btn">Login</button>
+    <button class="nav-btn primary">Create Coin</button>
+    <button class="nav-btn">Tokenomics</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <img src="logo-big.png">
+    <h1 class="hero-title">
+      Launch your next big <span>token</span><br>
+      with <b>GOGI</b>
+    </h1>
+    <p class="hero-sub">
+      The most stylish & premium memecoin launchpad.
+    </p>
+
+    <div class="hero-actions">
+      <button class="primary">Create Token</button>
+      <button class="secondary">Explore Tokens</button>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="imoggogi bg.png.png">
+  </div>
+</section>
+
+<!-- TOP PROJECTS -->
+<section class="section">
+  <h2>Top Projects</h2>
+</section>
+
+</body>
+</html>
