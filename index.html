@@ -1,100 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GOGI Launchpad</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <title>GOGI Launch</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- SIDEBAR -->
-<aside class="sidebar">
-    <div class="logo-container">
-        <img id="sidebarLogo" src="assets/img/gogi-icon.png" class="sidebar-logo">
-        <span id="logoText">gogi</span>
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">gogi</div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+  </div>
+
+  <div class="nav-actions">
+    <button class="nav-btn" id="loginBtn">Login</button>
+    <button class="nav-btn glow">Create Coin</button>
+    <button class="nav-btn">Tokenomics</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <img src="imoggogi bg.png.png" class="hinkali-bg" />
+  </div>
+
+  <div class="hero-right">
+    <h1>
+      Launch your <span class="highlight">next big token</span><br />
+      with <span class="brand">GOGI</span>
+    </h1>
+
+    <p>The most stylish & premium memecoin launchpad.</p>
+
+    <div class="hero-actions">
+      <button class="btn primary">Create Token</button>
+      <button class="btn ghost">Explore Tokens</button>
     </div>
+  </div>
+</section>
 
-    <nav class="menu">
-        <a href="#"><img src="assets/img/search.png"> Home</a>
-        <a href="#"><img src="assets/img/search.png"> Chat</a>
-        <a href="#"><img src="assets/img/search.png"> Support</a>
-    </nav>
-</aside>
+<!-- TRENDING (stil BONK dar GOGI) -->
+<section class="trending-section">
+  <h2>🔥 Now Trending</h2>
+  <div class="cards">
+    <div class="card">GOGI Anti-Rug</div>
+    <div class="card">Baby GOGI</div>
+    <div class="card">GOGI Classic</div>
+  </div>
+</section>
 
-<!-- PAGE WRAPPER -->
-<div class="page">
-
-    <!-- HEADER -->
-    <header>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-        </div>
-        <div class="top-buttons">
-            <button class="glow-btn">Login</button>
-            <button class="glow-btn">Create Coin</button>
-            <button class="glow-btn">Tokenomics</button>
-        </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-left">
-            <img src="assets/img/gogi-full.png" class="hero-gogi">
-        </div>
-
-        <div class="hero-right">
-            <h1>Launch your <span class="blue">next big token</span><br>with GOGI</h1>
-            <p class="subtitle">The most stylish & premium memecoin launchpad.<br>
-               Fast. Elegant. Built for viral domination.</p>
-
-            <div class="hero-buttons">
-                <button class="glow-btn big">Create Token</button>
-                <button class="glow-btn big">Explore Tokens</button>
-            </div>
-        </div>
-
-        <!-- HINKALI LUXURY RIGHT -->
-        <img src="assets/img/hinkali-bg.png" class="hinkali-floating">
-    </section>
-
-    <!-- TRENDING SECTION -->
-    <section class="trending">
-        <h2>Now Trending</h2>
-
-        <div class="trending-grid">
-
-            <!-- Example card -->
-            <div class="token-card">
-                <img src="assets/img/gogi-icon.png" class="token-img">
-                <div class="token-info">
-                    <h3>GOGI Classic</h3>
-                    <p class="mc">$12.4K</p>
-                    <div class="bar"><div class="fill" style="width: 40%;"></div></div>
-                </div>
-            </div>
-
-            <div class="token-card">
-                <img src="assets/img/gogi-icon.png" class="token-img">
-                <div class="token-info">
-                    <h3>Baby GOGI</h3>
-                    <p class="mc">$7.9K</p>
-                    <div class="bar"><div class="fill" style="width: 60%;"></div></div>
-                </div>
-            </div>
-
-            <div class="token-card">
-                <img src="assets/img/gogi-icon.png" class="token-img">
-                <div class="token-info">
-                    <h3>GOGI Anti-Rug</h3>
-                    <p class="mc">$19.2K</p>
-                    <div class="bar"><div class="fill" style="width: 80%;"></div></div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
+<!-- LOGIN MODAL -->
+<div class="login-modal" id="loginModal">
+  <div class="login-box">
+    <img src="logo-small.png" class="login-logo" />
+    <button class="login-option">Login with email</button>
+    <button class="login-option">Phantom</button>
+    <button class="login-option close">Close</button>
+  </div>
 </div>
 
 <script src="script.js"></script>
