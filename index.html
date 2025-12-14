@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>GOGI Launch</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta charset="UTF-8">
+<title>GOGI Launch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-<header class="header">
-  <div class="logo">
-    <img src="assets/img/gogi-icon.png" alt="GOGI">
-  </div>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <div class="search">
-    <input type="text" placeholder="Search tokens">
-  </div>
+body {
+  font-family: Inter, system-ui;
+  background: radial-gradient(circle at left, #0b2b46, #05080d);
+  color: white;
+  overflow-x: hidden;
+}
 
-  <nav class="nav">
-    <button class="nav-btn">Login</button>
-    <button class="nav-btn primary">Create Coin</button>
-    <button class="nav-btn">Tokenomics</button>
-  </nav>
-</header>
+/* ================= NAV ================= */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: rgba(5,10,18,0.65);
+  backdrop-filter: blur(18px);
+  z-index: 100;
+}
 
-<section class="hero">
-  <div class="hero-left">
-    <img src="assets/img/gogi-full.png" class="hero-logo" alt="GOGI logo">
-  </div>
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
 
-  <div class="hero-right">
-    <h1>
-      Launch your <span class="accent">next big token</span><br>
-      with <strong>GOGI</strong>
-    </h1>
+.logo {
+  height: 42px;
+  filter: drop-shadow(0 0 14px rgba(80,160,255,.45));
+}
 
-    <p>Premium crypto launchpad. Clean. Fast. Trusted.</p>
+/* SEARCH – ROTUND + ALBASTRU */
+.search {
+  width: 260px;
+  padding: 11px 18px;
+  border-radius: 999px;
+  background: rgba(80,160,255,.18);
+  border: 1px solid rgba(80,160,255,.35);
+  color: white;
+  outline: none;
+}
 
-    <div class="actions">
-      <button class="btn primary">Create Token</button>
-      <button class="btn ghost">Explore Tokens</button>
-    </div>
-  </div>
+.search::placeholder {
+  color: #bcdcff;
+}
 
-  <img src="assets/img/imoggogi bg.png.png" class="hinkali" alt="">
-</section>
-
-</body>
-</html>
+.search:focus {
+  box-shadow: 0 0 22px rgba(80,16
