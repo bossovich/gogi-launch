@@ -8,57 +8,60 @@
 </head>
 <body>
 
+<!-- BACKGROUND -->
 <div class="bg"></div>
+<div class="bg-overlay"></div>
 
+<!-- NAVBAR -->
 <nav class="nav">
   <div class="nav-left">
-    <img src="assets/img/logo-small.png" class="logo" alt="logo">
+    <img src="assets/img/logo-small.png" class="logo-small" alt="logo">
     <span class="logo-text">gogi</span>
     <img src="assets/img/icon-search.png" class="search-icon" alt="search">
   </div>
 
   <div class="nav-actions">
-    <a href="#" class="nav-btn">Login</a>
-    <a href="#" class="nav-btn">Create Token</a>
+    <a class="nav-btn">Login</a>
+    <a class="nav-btn">Create Token</a>
     <a href="why-us.html" class="nav-btn why">Why Us</a>
   </div>
 </nav>
 
-<!-- SEARCH BAR -->
+<!-- SEARCH -->
 <div class="search-bar" id="searchBar">
   <input type="text" placeholder="Search tokens, projects...">
   <span class="close-search" id="closeSearch">✕</span>
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero hero-top">
+
+  <!-- STÂNGA: LOGO MARE -->
   <div class="hero-left">
-    <h1>
-      Launch<br>
-      <span class="brand">GOGI</span>
+    <img src="assets/img/logo-big.png" class="hero-logo-big" alt="GOGI logo">
+  </div>
+
+  <!-- CENTRU: TEXT + TOP PROJECTS -->
+  <div class="hero-center">
+    <h1 class="hero-line">
+      Launch with <span class="brand">GOGI</span>
+      <span class="dot">·</span>
+      <span class="subtitle">Premium crypto launchpad</span>
     </h1>
 
-    <p class="hero-desc">
-      Premium crypto launchpad.<br>
-      Built to beat pump.fun & bonk.fun.
-    </p>
-
-    <!-- TABEL 3 TOKENURI -->
-    <div class="token-circle">
-      <div class="token">Fast Launch</div>
-      <div class="token">AI Secure</div>
-      <div class="token">Fair Fees</div>
+    <div class="top-projects">
+      <div class="project">BONK</div>
+      <div class="project">WIF</div>
+      <div class="project">POPCAT</div>
     </div>
   </div>
 
+  <!-- DREAPTA: HINKALI -->
   <div class="hero-right">
-    <img
-      src="assets/img/hinkali.png.png"
-      class="hero-hinkali"
-      alt="GOGI Hinkali"
-    >
+    <img src="assets/img/hinkali.png.png" class="hero-hinkali" alt="Hinkali">
     <div class="point-indicator"></div>
   </div>
+
 </section>
 
 <script src="script.js"></script>
