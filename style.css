@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-  color: #ffffff;
+  color: #fff;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -16,7 +17,19 @@ body {
   position: fixed;
   inset: 0;
   background: url("assets/img/bg.png") center / cover no-repeat;
-  filter: blur(14px);
+  filter: blur(18px) brightness(0.75);
+  z-index: -2;
+}
+
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.25),
+    rgba(0,0,0,0.45)
+  );
   z-index: -1;
 }
 
@@ -25,101 +38,54 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 70px;
+  padding: 32px 80px;
 }
 
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
-.logo { width: 28px; }
+.logo-small {
+  width: 36px;
+}
 
 .logo-text {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
-  opacity: 0.9;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
-/* SEARCH ICON */
 .search-icon {
   width: 16px;
-  margin-left: 10px;
-  opacity: 0.7;
+  opacity: 0.75;
   cursor: pointer;
-  transition: 0.25s;
 }
 
-.search-icon:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 6px rgba(58,169,255,0.8));
-}
-
+/* BUTTONS */
 .nav-actions {
   display: flex;
-  gap: 16px;
+  gap: 18px;
 }
 
 .nav-btn {
-  padding: 10px 22px;
+  padding: 14px 26px;
   border-radius: 999px;
   background: #2f7dff;
-  color: #ffffff;
-  font-size: 13px;
-  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 0 14px rgba(47,125,255,0.45);
   transition: 0.25s;
 }
 
 .nav-btn:hover {
-  box-shadow: 0 0 18px rgba(47,125,255,0.9);
+  box-shadow: 0 0 22px rgba(47,125,255,0.8);
   transform: translateY(-1px);
 }
 
-/* WHY US – BATTLE */
 .nav-btn.why {
   color: #ff3b3b;
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-btn.why::after {
-  content: "";
-  position: absolute;
-  bottom: 4px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: #ff3b3b;
-  transform: translateX(-50%);
-  transition: 0.3s;
-}
-
-.nav-btn.why:hover::after {
-  width: 60%;
-}
-
-.nav-btn.why:hover {
-  background: linear-gradient(90deg,#2f7dff,#ff3b3b,#2f7dff);
-  background-size: 200% 100%;
-  animation: battleShake 0.35s, battlePulse 1.2s linear infinite;
-  box-shadow:
-    0 0 18px rgba(47,125,255,0.9),
-    0 0 14px rgba(255,59,59,0.9);
-}
-
-@keyframes battleShake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-1px); }
-  50% { transform: translateX(1px); }
-  75% { transform: translateX(-1px); }
-  100% { transform: translateX(0); }
-}
-
-@keyframes battlePulse {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
 }
 
 /* SEARCH BAR */
@@ -129,7 +95,7 @@ body {
   left: 0;
   width: 100%;
   height: 70px;
-  background: rgba(15,20,40,0.75);
+  background: rgba(15,20,40,0.8);
   backdrop-filter: blur(18px);
   display: flex;
   align-items: center;
@@ -143,7 +109,6 @@ body {
 
 .search-bar input {
   width: 420px;
-  max-width: 80%;
   padding: 14px 20px;
   border-radius: 999px;
   border: none;
@@ -158,64 +123,80 @@ body {
   opacity: 0.7;
 }
 
-/* HERO */
-.hero {
-  display: flex;
-  justify-content: space-between;
+/* HERO LAYOUT */
+.hero-top {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 80px 70px;
+  padding: 40px 80px 70px;
+  gap: 40px;
 }
 
-.hero-left { max-width: 520px; }
-
-.hero-left h1 {
-  font-size: 72px;
-  line-height: 1;
-}
-
-.brand { color: #3aa9ff; }
-
-.hero-desc {
-  margin-top: 20px;
-  opacity: 0.8;
-}
-
-/* TOKEN TABLE */
-.token-circle {
-  margin-top: 40px;
+/* LEFT */
+.hero-left {
   display: flex;
-  gap: 14px;
+  justify-content: flex-start;
 }
 
-.token {
-  padding: 16px 24px;
+.hero-logo-big {
+  width: 220px;
+  filter: drop-shadow(0 0 26px rgba(0,0,0,0.5));
+}
+
+/* CENTER */
+.hero-center {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.hero-line {
+  font-size: 34px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.hero-line .brand {
+  color: #4db2ff;
+  font-weight: 600;
+}
+
+.hero-line .dot {
+  margin: 0 10px;
+  opacity: 0.6;
+}
+
+.hero-line .subtitle {
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+/* TOP PROJECTS */
+.top-projects {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.project {
+  padding: 8px 16px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.08);
+  font-size: 12px;
+  background: rgba(255,255,255,0.12);
   backdrop-filter: blur(12px);
-  font-size: 13px;
 }
 
-/* HERO RIGHT */
+/* RIGHT */
 .hero-right {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
 }
 
 .hero-hinkali {
-  width: 460px;
-  transition:
-    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.6s ease;
-  filter:
-    drop-shadow(0 0 18px rgba(58,169,255,0.35))
-    drop-shadow(0 0 40px rgba(58,169,255,0.15));
-}
-
-/* LOOK AT WHY US */
-.hero-hinkali.look-why {
-  transform: rotate(-8deg) translateX(-18px) translateY(-6px);
-  filter:
-    drop-shadow(0 0 30px rgba(58,169,255,0.65))
-    drop-shadow(0 0 80px rgba(58,169,255,0.25));
+  width: 420px;
+  filter: drop-shadow(0 0 18px rgba(58,169,255,0.35));
+  transition: 0.6s ease;
 }
 
 /* POINT INDICATOR */
@@ -227,57 +208,5 @@ body {
   height: 4px;
   background: linear-gradient(90deg, transparent, #ff3b3b);
   opacity: 0;
-  border-radius: 4px;
   transition: 0.4s ease;
-}
-
-.point-indicator.active {
-  opacity: 1;
-  transform: translateX(-22px);
-}
-
-/* WHY PAGE */
-.why {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px;
-}
-
-.why-img { width: 300px; }
-
-.why-benefits {
-  display: flex;
-  gap: 30px;
-}
-
-.benefit {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(14px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-/* FREEZE + FLASH */
-body.freeze {
-  pointer-events: none;
-}
-
-.screen-flash {
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle, rgba(255,59,59,0.25), transparent);
-  opacity: 0;
-  z-index: 9999;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-}
-
-.screen-flash.active {
-  opacity: 1;
 }
