@@ -35,4 +35,20 @@ if (whyBtn) {
       window.location.href = "why-us.html";
     }, 200);
   });
+  // Optional UX polish for search
+const nav = document.querySelector(".nav");
+const searchInput = document.querySelector(".nav-search input");
+
+if (nav && searchInput) {
+  nav.addEventListener("mouseenter", () => {
+    searchInput.focus();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      searchInput.blur();
+    }
+  });
+}
+
 }
