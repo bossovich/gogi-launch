@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>GOGI Launch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,9 +12,9 @@
 
 <nav class="nav">
   <div class="nav-left">
-    <img src="assets/img/logo-small.png" class="logo">
+    <img src="assets/img/logo-small.png" class="logo" alt="logo">
     <span class="logo-text">gogi</span>
-    <img src="assets/img/icon-search.png" class="search-icon">
+    <img src="assets/img/icon-search.png" class="search-icon" alt="search">
   </div>
 
   <div class="nav-actions">
@@ -23,3 +24,43 @@
   </div>
 </nav>
 
+<!-- SEARCH BAR -->
+<div class="search-bar" id="searchBar">
+  <input type="text" placeholder="Search tokens, projects...">
+  <span class="close-search" id="closeSearch">✕</span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <h1>
+      Launch<br>
+      <span class="brand">GOGI</span>
+    </h1>
+
+    <p class="hero-desc">
+      Premium crypto launchpad.<br>
+      Built to beat pump.fun & bonk.fun.
+    </p>
+
+    <!-- TABEL 3 TOKENURI -->
+    <div class="token-circle">
+      <div class="token">Fast Launch</div>
+      <div class="token">AI Secure</div>
+      <div class="token">Fair Fees</div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img
+      src="assets/img/hinkali.png.png"
+      class="hero-hinkali"
+      alt="GOGI Hinkali"
+    >
+    <div class="point-indicator"></div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
