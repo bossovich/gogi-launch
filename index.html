@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GOGI Launch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <img src="assets/img/logo-small.png" />
+    <span>GOGI</span>
+  </div>
+
+  <nav>
+    <a><img src="assets/img/home.png"><span>Home</span></a>
+    <a><img src="assets/img/play.png"><span>Livestreams</span></a>
+    <a><img src="assets/img/support.png"><span>Support</span></a>
+    <a><img src="assets/img/deal.png"><span>Partners</span></a>
+  </nav>
+</aside>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <button class="burger" onclick="toggleSidebar()">☰</button>
+
+  <div class="search">
+    <img src="assets/img/icon-search.png">
+    <input placeholder="Search tokens, projects..." />
+  </div>
+
+  <div class="actions">
+    <button class="btn">Login</button>
+    <button class="btn">Create Token</button>
+    <button class="btn gold">Why Us</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- LEFT -->
+  <div class="hero-left">
+    <img src="assets/img/logo-big.png" class="logo-big" />
+  </div>
+
+  <!-- CENTER -->
+  <div class="hero-center">
+    <h1>Launch with <span class="gold">GOGI</span></h1>
+    <p class="subtitle">Premium crypto launchpad</p>
+
+    <div class="tokens-wrap">
+      <div class="token">
+        <img src="assets/img/logo-small.png">
+        <h3>BONK</h3>
+        <p>Market Cap: $100K</p>
+      </div>
+
+      <div class="token">
+        <img src="assets/img/logo-small.png">
+        <h3>WIF</h3>
+        <p>Market Cap: $100K</p>
+      </div>
+
+      <div class="token live">
+        <img src="assets/img/livetoken.png" class="live-badge">
+        <img src="assets/img/logo-small.png">
+        <h3>POPCAT</h3>
+        <p>Market Cap: $100K</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="hero-right">
+    <img src="assets/img/hinkali.png" class="float f1">
+    <img src="assets/img/bunny.png" class="float f2">
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
