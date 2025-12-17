@@ -7,7 +7,7 @@
 
 body {
   background: #07192f;
-  color: #fff;
+  color: white;
   overflow-x: hidden;
 }
 
@@ -15,8 +15,8 @@ body {
 .bg {
   position: fixed;
   inset: 0;
-  background: url("assets/img/bg.png") center / cover no-repeat;
-  filter: blur(20px);
+  background: url("assets/img/bg.png") center/cover no-repeat;
+  filter: blur(22px);
   z-index: -3;
 }
 
@@ -25,7 +25,7 @@ body {
   inset: 0;
   background: radial-gradient(
     ellipse at center,
-    rgba(20,80,160,0.25),
+    rgba(30,80,160,0.25),
     rgba(5,15,30,0.95)
   );
   z-index: -2;
@@ -34,7 +34,7 @@ body {
 /* HEADER */
 .header {
   position: relative;
-  height: 80px;
+  height: 84px;
 }
 
 .brand {
@@ -43,16 +43,17 @@ body {
   left: 14px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  cursor: pointer;
 }
 
 .brand img {
-  width: 42px;
+  width: 40px;
 }
 
 .brand span {
-  font-size: 26px;
-  font-weight: 900;
+  font-size: 22px;
+  font-weight: 800;
   background: linear-gradient(90deg, #4db2ff, #9ad9ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -61,18 +62,18 @@ body {
 /* SEARCH */
 .search {
   position: absolute;
-  top: 20px;
+  top: 22px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .search input {
   width: 420px;
-  padding: 14px 46px 14px 20px;
+  padding: 14px 44px 14px 20px;
   border-radius: 999px;
   border: none;
   background: rgba(255,255,255,0.14);
-  color: #fff;
+  color: white;
   font-weight: 600;
   outline: none;
 }
@@ -99,14 +100,14 @@ body {
   border-radius: 999px;
   border: none;
   background: #2f7dff;
-  color: #fff;
+  color: white;
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 0 16px rgba(47,125,255,0.6);
 }
 
 .actions .why {
-  color: #ff4d4d;
+  color: #e6b65c;
 }
 
 /* HERO */
@@ -117,68 +118,62 @@ body {
   padding: 120px 80px;
 }
 
-/* LOGO MARE */
+/* LOGO BIG */
 .hero-left img {
-  width: 340px;
-  filter: drop-shadow(0 0 50px rgba(90,160,255,0.6));
+  width: 360px;
+  filter: drop-shadow(0 0 60px rgba(90,160,255,0.6));
 }
 
-/* CENTER */
+/* CENTER TEXT */
 .hero-center {
   text-align: center;
 }
 
 .hero-center h1 {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 800;
 }
 
-.hero-center .gogi {
-  font-weight: 900;
-  background: linear-gradient(90deg, #4db2ff, #a8deff);
+.gold {
+  background: linear-gradient(90deg, #f5d27a, #fff1c1, #e6b65c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(80,160,255,0.8);
 }
 
-.hero-center .sub {
-  font-size: 22px;
-  font-weight: 600;
-  opacity: 0.85;
+.hero-center h2 {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #f0dca5;
 }
 
-.dot {
-  margin: 0 10px;
-  opacity: 0.6;
-}
-
-/* PROJECTS TABLE */
+/* PROJECTS */
 .projects {
-  margin-top: 36px;
-  padding: 36px;
-  border-radius: 32px;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 36px;
   background: linear-gradient(
     135deg,
-    rgba(70,150,255,0.55),
-    rgba(30,80,180,0.55)
+    rgba(70,150,255,0.6),
+    rgba(30,80,180,0.6)
   );
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(26px);
   display: flex;
-  gap: 26px;
+  gap: 28px;
   justify-content: center;
 }
 
 .card {
-  width: 160px;
-  background: #fff;
-  border-radius: 20px;
-  padding: 18px;
+  width: 170px;
+  background: white;
+  border-radius: 22px;
+  padding: 20px;
   text-align: center;
   color: #0a1a33;
 }
 
 .card img {
-  width: 52px;
+  width: 56px;
   margin-bottom: 10px;
 }
 
@@ -196,6 +191,57 @@ body {
 
 /* HINKALI */
 .hero-right img {
-  width: 440px;
-  filter: drop-shadow(0 0 28px rgba(90,160,255,0.45));
+  width: 460px;
+  filter: drop-shadow(0 0 30px rgba(90,160,255,0.45));
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #0a0f18;
+  padding: 90px 22px;
+  transition: 0.35s ease;
+  z-index: 1001;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sidebar nav a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #cfd8e3;
+  cursor: pointer;
+}
+
+.sidebar nav a.active {
+  color: #4db2ff;
+  font-weight: 700;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* OVERLAY */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
 }
