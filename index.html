@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>GOGI Launch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css?v=10" />
+  <link rel="stylesheet" href="style.css?v=20" />
 </head>
 <body>
 
@@ -12,57 +12,84 @@
 <div class="bg"></div>
 <div class="bg-vignette"></div>
 
-<!-- NAVBAR -->
-<nav class="nav">
-  <div class="nav-left">
+<!-- HEADER -->
+<header class="header">
+
+  <!-- LEFT LOGO (CORNER) -->
+  <div class="header-left">
     <img src="assets/img/logo-small.png" class="logo-small" />
     <span class="logo-text">gogi</span>
   </div>
 
-  <!-- SEARCH (CENTER, HOVER OPEN) -->
-  <div class="nav-search" id="navSearch">
+  <!-- CENTER SEARCH -->
+  <div class="header-search">
+    <img src="assets/img/icon-search.png" class="search-icon" />
     <input type="text" placeholder="Search tokens, projects…" />
-    <img src="assets/img/icon-search.png" />
   </div>
 
-  <div class="nav-actions">
-    <a class="nav-btn">Login</a>
-    <a class="nav-btn">Create Token</a>
-    <a class="nav-btn why">Why Us</a>
+  <!-- RIGHT ACTIONS -->
+  <div class="header-right">
+    <button class="btn">Login</button>
+    <button class="btn">Create Token</button>
+    <button class="btn why">Why Us</button>
   </div>
-</nav>
+
+</header>
 
 <!-- HERO -->
 <section class="hero">
 
-  <!-- LEFT: LOGO BIG -->
+  <!-- LEFT BIG LOGO -->
   <div class="hero-left">
-    <img src="assets/img/logo-big.png" class="hero-logo-big" />
+    <img src="assets/img/logo-big.png" class="logo-big" />
   </div>
 
-  <!-- CENTER: TEXT + TABLE -->
+  <!-- CENTER CONTENT -->
   <div class="hero-center">
-    <h1 class="hero-line">
-      Launch with <span class="brand">GOGI</span>
+
+    <h1 class="hero-title">
+      Launch with <span class="gogi-gradient">GOGI</span>
       <span class="dot">·</span>
       <span class="subtitle">Premium crypto launchpad</span>
     </h1>
 
-    <!-- TOP PROJECTS TABLE -->
-    <div class="projects-table">
-      <div class="project-card">BONK</div>
-      <div class="project-card">WIF</div>
-      <div class="project-card">POPCAT</div>
+    <!-- TOP PROJECTS CONTAINER -->
+    <div class="projects-container">
+
+      <div class="project-card">
+        <img src="assets/img/logo-small.png" />
+        <div class="project-info">
+          <strong>BONK</strong>
+          <span>Market Cap: $100K</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/logo-small.png" />
+        <div class="project-info">
+          <strong>WIF</strong>
+          <span>Market Cap: $100K</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/logo-small.png" />
+        <div class="project-info">
+          <strong>POPCAT</strong>
+          <span>Market Cap: $100K</span>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <!-- RIGHT: HINKALI -->
+  <!-- RIGHT HINKALI -->
   <div class="hero-right">
-    <img src="assets/img/hinkali.png.png" class="hero-hinkali" />
+    <img src="assets/img/hinkali.png.png" class="hinkali" />
   </div>
 
 </section>
 
-<script src="script.js?v=10"></script>
+<script src="script.js?v=20"></script>
 </body>
 </html>
