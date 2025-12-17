@@ -1,1 +1,151 @@
+* { box-sizing: border-box; margin:0; padding:0; }
+body {
+  font-family: system-ui, sans-serif;
+  background: radial-gradient(circle at center,#3c82c6,#071c33);
+  color:#fff;
+  overflow-x:hidden;
+}
 
+img { max-width:100%; height:auto; }
+
+.gold {
+  background: linear-gradient(90deg,#ffd27d,#ffb700);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.sidebar {
+  position:fixed;
+  left:0; top:0;
+  width:70px;
+  height:100vh;
+  background:rgba(10,20,40,.7);
+  backdrop-filter:blur(18px);
+  transition:.3s;
+  z-index:10;
+}
+.sidebar.open { width:220px; }
+
+.sidebar-logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:20px;
+}
+.sidebar-logo span { display:none; }
+.sidebar.open .sidebar-logo span { display:block; }
+
+.sidebar nav a {
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 20px;
+  cursor:pointer;
+  opacity:.85;
+}
+.sidebar nav a span { display:none; }
+.sidebar.open nav a span { display:block; }
+
+.topbar {
+  margin-left:70px;
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.burger {
+  font-size:22px;
+  background:none;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+
+.search {
+  display:flex;
+  align-items:center;
+  background:rgba(255,255,255,.12);
+  padding:8px 14px;
+  border-radius:20px;
+}
+.search input {
+  background:none;
+  border:none;
+  color:white;
+  outline:none;
+}
+
+.actions .btn {
+  background:#3b82f6;
+  border:none;
+  color:white;
+  padding:10px 16px;
+  border-radius:20px;
+  margin-left:10px;
+}
+.actions .gold {
+  background:linear-gradient(90deg,#ffd27d,#ffb700);
+  color:black;
+}
+
+.hero {
+  margin-left:70px;
+  padding:80px;
+  display:grid;
+  grid-template-columns:360px 1fr 260px;
+  align-items:center;
+}
+
+.logo-big {
+  width:300px;
+  filter:drop-shadow(0 0 30px rgba(120,180,255,.4));
+  animation:float 6s ease-in-out infinite;
+}
+
+.hero-center h1 {
+  font-size:44px;
+  font-weight:800;
+}
+.subtitle {
+  margin:10px 0 40px;
+  opacity:.85;
+}
+
+.tokens-wrap {
+  background:rgba(70,130,200,.35);
+  backdrop-filter:blur(20px);
+  border-radius:26px;
+  padding:30px;
+  display:flex;
+  gap:30px;
+}
+
+.token {
+  background:white;
+  color:black;
+  border-radius:18px;
+  padding:20px;
+  width:160px;
+  text-align:center;
+  position:relative;
+}
+.token.live .live-badge {
+  position:absolute;
+  top:-14px; right:-14px;
+  width:60px;
+}
+
+.hero-right .float {
+  width:120px;
+  position:absolute;
+  animation:float 5s ease-in-out infinite;
+}
+.f1 { top:140px; right:120px; }
+.f2 { top:300px; right:60px; }
+
+@keyframes float {
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-14px)}
+  100%{transform:translateY(0)}
+}
