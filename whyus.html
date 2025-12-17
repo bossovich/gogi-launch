@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Why GOGI</title>
-<style>
-body{
-  margin:0;
-  font-family:Inter,Arial;
-  background:radial-gradient(1000px at top,#0b1f3a,#020814);
-  color:#fff;
-}
-.wrap{
-  display:flex;
-  gap:40px;
-  padding:80px;
-}
-.cards{
-  flex:1;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px;
-}
-.card{
-  background:rgba(255,255,255,.06);
-  backdrop-filter:blur(14px);
-  border-radius:20px;
-  padding:24px;
-}
-img{max-height:420px;}
-</style>
+  <meta charset="UTF-8">
+  <title>Why GOGI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="wrap">
-  <div class="cards">
-    <div class="card">AI Anti-Rug Protection</div>
-    <div class="card">No Dead Tokens</div>
-    <div class="card">Fair Launch Logic</div>
-    <div class="card">Community First</div>
+<div class="bg"></div>
+
+<nav class="nav">
+  <div class="nav-left">
+    <img src="assets/img/logo-small.png" class="logo">
+    <span class="logo-text">gogi</span>
+    <img src="assets/img/icon-search.png" class="search-icon">
   </div>
-  <img src="assets/img/bunny.png">
+</nav>
+
+<div class="search-bar" id="searchBar">
+  <input type="text" placeholder="Search tokens, projects...">
+  <span class="close-search" id="closeSearch">✕</span>
 </div>
 
+<section class="why">
+  <img src="assets/img/uff-png.png" class="why-img">
+
+  <div class="why-benefits">
+    <div class="benefit">🤖 AI Rug Pull Protection</div>
+    <div class="benefit">⚖️ Fair Launch System</div>
+    <div class="benefit">💎 Low Fees for Creators</div>
+  </div>
+
+  <img src="assets/img/bunny.png" class="why-img">
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
