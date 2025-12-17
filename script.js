@@ -1,6 +1,6 @@
-const sidebar = document.querySelector('.sidebar');
-const toggle = document.getElementById('toggleSidebar');
+const sidebar = document.getElementById("sidebar");
+const burger = document.getElementById("burger");
 
-toggle.onclick = () => {
-  sidebar.classList.toggle('open');
+burger.onclick = () => {
+  sidebar.classList.toggle("collapsed");
 };
