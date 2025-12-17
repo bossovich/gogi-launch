@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>GOGI Launch</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css?v=10" />
 </head>
 <body>
 
 <!-- BACKGROUND -->
 <div class="bg"></div>
-<div class="bg-overlay"></div>
+<div class="bg-vignette"></div>
 
 <!-- NAVBAR -->
 <nav class="nav">
   <div class="nav-left">
-    <img src="assets/img/logo-small.png" class="logo-small" alt="logo">
+    <img src="assets/img/logo-small.png" class="logo-small" />
     <span class="logo-text">gogi</span>
-    <img src="assets/img/icon-search.png" class="search-icon" alt="search">
+  </div>
+
+  <!-- SEARCH (CENTER, HOVER OPEN) -->
+  <div class="nav-search" id="navSearch">
+    <input type="text" placeholder="Search tokens, projects…" />
+    <img src="assets/img/icon-search.png" />
   </div>
 
   <div class="nav-actions">
     <a class="nav-btn">Login</a>
     <a class="nav-btn">Create Token</a>
-    <a href="why-us.html" class="nav-btn why">Why Us</a>
+    <a class="nav-btn why">Why Us</a>
   </div>
 </nav>
 
-<!-- SEARCH -->
-<div class="search-bar" id="searchBar">
-  <input type="text" placeholder="Search tokens, projects...">
-  <span class="close-search" id="closeSearch">✕</span>
-</div>
-
 <!-- HERO -->
-<section class="hero hero-top">
+<section class="hero">
 
-  <!-- STÂNGA: LOGO MARE -->
+  <!-- LEFT: LOGO BIG -->
   <div class="hero-left">
-    <img src="assets/img/logo-big.png" class="hero-logo-big" alt="GOGI logo">
+    <img src="assets/img/logo-big.png" class="hero-logo-big" />
   </div>
 
-  <!-- CENTRU: TEXT + TOP PROJECTS -->
+  <!-- CENTER: TEXT + TABLE -->
   <div class="hero-center">
     <h1 class="hero-line">
       Launch with <span class="brand">GOGI</span>
@@ -49,21 +48,21 @@
       <span class="subtitle">Premium crypto launchpad</span>
     </h1>
 
-    <div class="top-projects">
-      <div class="project">BONK</div>
-      <div class="project">WIF</div>
-      <div class="project">POPCAT</div>
+    <!-- TOP PROJECTS TABLE -->
+    <div class="projects-table">
+      <div class="project-card">BONK</div>
+      <div class="project-card">WIF</div>
+      <div class="project-card">POPCAT</div>
     </div>
   </div>
 
-  <!-- DREAPTA: HINKALI -->
+  <!-- RIGHT: HINKALI -->
   <div class="hero-right">
-    <img src="assets/img/hinkali.png.png" class="hero-hinkali" alt="Hinkali">
-    <div class="point-indicator"></div>
+    <img src="assets/img/hinkali.png.png" class="hero-hinkali" />
   </div>
 
 </section>
 
-<script src="script.js"></script>
+<script src="script.js?v=10"></script>
 </body>
 </html>
