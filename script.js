@@ -28,3 +28,26 @@ if (openSidebar && sidebar && overlay) {
   transform: translateX(-40px) scale(1.08);
   filter: drop-shadow(0 0 50px rgba(120,190,255,0.95));
 }
+// WHY US CINEMATIC EFFECT
+const whyBtn = document.querySelector(".actions .why");
+const hero = document.querySelector(".hero");
+const hinkali = document.querySelector(".hero-right img");
+
+if (whyBtn && hero && hinkali) {
+  whyBtn.addEventListener("click", () => {
+
+    // freeze moment
+    hero.classList.add("freeze");
+
+    // hinkali reaction
+    hinkali.classList.add("battle");
+
+    // release after short time
+    setTimeout(() => {
+      hero.classList.remove("freeze");
+    }, 200);
+
+    // aici, mai târziu, putem face redirect:
+    // setTimeout(() => window.location.href = "why.html", 600);
+  });
+}
