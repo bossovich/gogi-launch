@@ -1,54 +1,16 @@
-/* SEARCH */
-const searchIcon = document.querySelector(".search-icon");
-const searchBar = document.getElementById("searchBar");
-const closeSearch = document.getElementById("closeSearch");
+// SIDEBAR TOGGLE
+const openSidebar = document.getElementById("openSidebar");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("sidebarOverlay");
 
-searchIcon.addEventListener("click", () => {
-  searchBar.classList.add("active");
-});
-
-closeSearch.addEventListener("click", () => {
-  searchBar.classList.remove("active");
-});
-
-/* HINKALI LOOK + POINT */
-const whyBtn = document.querySelector(".nav-btn.why");
-const hinkali = document.querySelector(".hero-hinkali");
-const indicator = document.querySelector(".point-indicator");
-
-if (whyBtn) {
-  whyBtn.addEventListener("mouseenter", () => {
-    hinkali.style.transform = "rotate(-6deg) translateX(-12px)";
-    indicator.style.opacity = "1";
+if (openSidebar && sidebar && overlay) {
+  openSidebar.addEventListener("click", () => {
+    sidebar.classList.add("open");
+    overlay.classList.add("show");
   });
 
-  whyBtn.addEventListener("mouseleave", () => {
-    hinkali.style.transform = "none";
-    indicator.style.opacity = "0";
+  overlay.addEventListener("click", () => {
+    sidebar.classList.remove("open");
+    overlay.classList.remove("show");
   });
-
-  /* CINEMATIC CLICK */
-  whyBtn.addEventListener("click", e => {
-    e.preventDefault();
-    document.body.style.pointerEvents = "none";
-    setTimeout(() => {
-      window.location.href = "why-us.html";
-    }, 200);
-  });
-  // Optional UX polish for search
-const nav = document.querySelector(".nav");
-const searchInput = document.querySelector(".nav-search input");
-
-if (nav && searchInput) {
-  nav.addEventListener("mouseenter", () => {
-    searchInput.focus();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      searchInput.blur();
-    }
-  });
-}
-
 }
