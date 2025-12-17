@@ -8,89 +8,71 @@
 <body>
 
 <!-- SIDEBAR -->
-<aside id="sidebar" class="collapsed">
+<aside class="sidebar">
   <div class="sidebar-top">
     <img src="assets/img/logo-small.png" class="logo-icon">
     <span class="logo-text">GOGI</span>
+    <div class="burger" id="toggleSidebar">
+      <span></span><span></span><span></span>
+    </div>
   </div>
 
-  <button id="menuBtn" class="burger">
-    <span></span><span></span><span></span>
-  </button>
-
-  <nav class="sidebar-nav">
-    <a><img src="assets/img/home.svg"><span>Home</span></a>
-    <a><img src="assets/img/play.svg"><span>Livestreams</span></a>
-    <a><img src="assets/img/support.svg"><span>Support</span></a>
-    <a><img src="assets/img/deal.svg"><span>Partners</span></a>
+  <nav>
+    <a class="nav-item"><img src="assets/img/home.svg"><span>Home</span></a>
+    <a class="nav-item"><img src="assets/img/play.svg"><span>Livestreams</span></a>
+    <a class="nav-item"><img src="assets/img/support.svg"><span>Support</span></a>
+    <a class="nav-item"><img src="assets/img/deal.svg"><span>Partners</span></a>
   </nav>
 </aside>
 
 <!-- MAIN -->
-<main id="app">
+<main class="main">
 
 <header class="topbar">
-  <div class="brand">
-    <img src="assets/img/logo-small.png">
-    <span class="brand-text">GOGI</span>
-  </div>
-
-  <div class="search">
-    <img src="assets/img/icon-search.png">
-    <input placeholder="Search tokens, projects…">
-  </div>
-
+  <div></div>
   <div class="actions">
-    <button class="btn">Login</button>
-    <button class="btn">Create Token</button>
-    <button class="btn why">Why Us</button>
+    <button class="btn blue">Login</button>
+    <button class="btn blue">Create Token</button>
+    <button class="btn red">Why Us</button>
   </div>
 </header>
 
 <section class="hero">
+  <img src="assets/img/bg.png" class="bg">
 
-  <!-- LOGO MARE -->
   <div class="hero-left">
-    <img src="assets/img/logo-big.png" class="logo-big">
+    <img src="assets/img/logo-big.png" class="main-logo">
   </div>
 
-  <!-- TEXT -->
   <div class="hero-center">
     <h1>Launch with <span class="gold">GOGI</span></h1>
-    <p class="subtitle">Premium crypto launchpad</p>
+    <p>Premium crypto launchpad</p>
 
-    <!-- TOP PROJECTS -->
-    <div class="projects">
-
+    <div class="cards">
       <div class="card">
-        <img src="assets/img/logo-small.png">
-        <h4>BONK</h4>
-        <span>$100K</span>
+        <h3>BONK</h3>
+        <span>Market Cap: $100K</span>
       </div>
 
       <div class="card">
-        <img src="assets/img/logo-small.png">
-        <h4>WIF</h4>
-        <span>$100K</span>
+        <h3>WIF</h3>
+        <span>Market Cap: $100K</span>
       </div>
 
       <div class="card live">
-        <img src="assets/img/logo-small.png">
-        <h4>POPCAT</h4>
-        <span>$100K</span>
-
+        <span class="live-badge">LIVE</span>
         <img src="assets/img/livetoken.png" class="live-token">
-        <div class="live-badge">LIVE</div>
+        <h3>POPCAT</h3>
+        <span>Market Cap: $100K</span>
       </div>
-
     </div>
   </div>
 
-  <!-- HINKALI -->
-  <img src="assets/img/hinkali.png" class="hinkali h1">
-  <img src="assets/img/hinkali.png" class="hinkali h2">
-  <img src="assets/img/hinkali.png" class="hinkali h3">
-
+  <div class="hero-right">
+    <img src="assets/img/hinkali.png" class="hinkali big">
+    <img src="assets/img/hinkali.png" class="hinkali mid">
+    <img src="assets/img/hinkali.png" class="hinkali small">
+  </div>
 </section>
 
 </main>
