@@ -1,132 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>GOGI Launch</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <!-- SIDEBAR -->
-<div class="sidebar">
-  <img src="logo-small.png" class="sidebar-logo" alt="GOGI">
-  <img src="home.svg">
-  <img src="deal.svg">
-  <img src="live.svg">
-  <img src="support.svg">
-</div>
+<aside class="sidebar">
+  <div class="brand">
+    <img src="./assets/img/logo-small.png" />
+    <span class="brand-text">GOGI</span>
+  </div>
+
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="menu">
+    <div class="item active">
+      <img src="./assets/img/home.svg" />
+      <span>Home</span>
+    </div>
+    <div class="item" id="whyUs">
+      <img src="./assets/img/deal.svg" />
+      <span>Why Us</span>
+    </div>
+    <div class="item">
+      <img src="./assets/img/live.svg" />
+      <span>Live</span>
+    </div>
+    <div class="item">
+      <img src="./assets/img/support.svg" />
+      <span>Support</span>
+    </div>
+  </nav>
+</aside>
 
 <!-- MAIN -->
-<div class="main">
+<main class="content">
 
-  <!-- LOGO SUS STÂNGA -->
-  <div class="top-left">
-    <img src="logo-big.png" class="logo-big">
-    <span class="brand">GOGI</span>
+  <!-- SEARCH -->
+  <div class="search-wrapper">
+    <input type="text" placeholder="Search tokens, projects..." />
   </div>
 
   <!-- HERO -->
   <section class="hero">
-    <h1>
-      <span class="hero-text">Launch with</span>
-      <span class="hero-gogi">GOGI</span>
-    </h1>
-    <p class="hero-sub">Premium crypto launchpad</p>
+    <img src="./assets/img/hinkali.png" class="hinkali" id="hinkali" />
+
+    <h1>Launch with <span>GOGI</span></h1>
+    <p class="subtitle">Premium crypto launchpad</p>
+
+    <!-- TOKENS -->
+    <div class="token-glass">
+      <div class="token-card">
+        <div class="logo-circle"></div>
+        <p>Market Cap: $100K</p>
+      </div>
+
+      <div class="token-card">
+        <div class="logo-circle"></div>
+        <p>Market Cap: $100K</p>
+      </div>
+
+      <div class="token-card live">
+        <img src="./assets/img/livetoken.png" class="live-badge" />
+        <div class="logo-circle"></div>
+        <p>Market Cap: $100K</p>
+      </div>
+    </div>
   </section>
 
-  <!-- TOKENS -->
-  <section class="tokens">
+</main>
 
-    <div class="token-card">
-      <img src="livetoken.png" class="token-logo">
-      <h3>Token Alpha</h3>
-      <div class="progress"><div class="bar" style="width:40%"></div></div>
-    </div>
+<script>
+const sidebar = document.querySelector('.sidebar');
+const burger = document.querySelector('.hamburger');
+burger.onclick = () => sidebar.classList.toggle('open');
 
-    <div class="token-card">
-      <img src="livetoken.png" class="token-logo">
-      <h3>Token Beta</h3>
-      <div class="progress"><div class="bar" style="width:55%"></div></div>
-    </div>
+const why = document.getElementById('whyUs');
+const hinkali = document.getElementById('hinkali');
 
-    <div class="token-card live">
-      <span class="live-badge">LIVE</span>
-      <img src="livetoken.png" class="token-logo">
-      <h3>GOGI</h3>
-      <div class="progress"><div class="bar" style="width:75%"></div></div>
-    </div>
-
-  </section>
-
-  <button class="login">Login</button>
-
-</div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>GOGI Launch</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- SIDEBAR -->
-<div class="sidebar">
-  <img src="logo-small.png" class="sidebar-logo" alt="GOGI">
-  <img src="home.svg">
-  <img src="deal.svg">
-  <img src="live.svg">
-  <img src="support.svg">
-</div>
-
-<!-- MAIN -->
-<div class="main">
-
-  <!-- LOGO SUS STÂNGA -->
-  <div class="top-left">
-    <img src="logo-big.png" class="logo-big">
-    <span class="brand">GOGI</span>
-  </div>
-
-  <!-- HERO -->
-  <section class="hero">
-    <h1>
-      <span class="hero-text">Launch with</span>
-      <span class="hero-gogi">GOGI</span>
-    </h1>
-    <p class="hero-sub">Premium crypto launchpad</p>
-  </section>
-
-  <!-- TOKENS -->
-  <section class="tokens">
-
-    <div class="token-card">
-      <img src="livetoken.png" class="token-logo">
-      <h3>Token Alpha</h3>
-      <div class="progress"><div class="bar" style="width:40%"></div></div>
-    </div>
-
-    <div class="token-card">
-      <img src="livetoken.png" class="token-logo">
-      <h3>Token Beta</h3>
-      <div class="progress"><div class="bar" style="width:55%"></div></div>
-    </div>
-
-    <div class="token-card live">
-      <span class="live-badge">LIVE</span>
-      <img src="livetoken.png" class="token-logo">
-      <h3>GOGI</h3>
-      <div class="progress"><div class="bar" style="width:75%"></div></div>
-    </div>
-
-  </section>
-
-  <button class="login">Login</button>
-
-</div>
+why.onmouseenter = () => hinkali.classList.add('animate');
+why.onmouseleave = () => hinkali.classList.remove('animate');
+</script>
 
 </body>
 </html>
